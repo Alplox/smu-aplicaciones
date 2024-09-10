@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplicaciones SMU</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fondo-topography mvh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top m-3 rounded-3 shadow d-flex flex-column">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aplicaciones SMU
+        <img src="img/smu-marca/smu-sa-logo.png" alt="SMU logo" width="28" height="25" class="rounded-circle mb-1"
+          style="filter: grayscale(100%);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex w-100" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link border-start border-primary-subtle ps-2"
+              href="#" target="_blank" rel="noopener noreferrer"
+              title="Tickets">Mesa de Servicios TI <i class="bi bi-box-arrow-up-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-start border-primary-subtle ps-2" href="#" target="_blank"
+              rel="noopener noreferrer" title="Chat">Agente Virtual de Servicios TI <i
+                class="bi bi-box-arrow-up-right"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link border-start border-primary-subtle ps-2" href="Archivos para zip/Ver IP Equipo.zip"
+              download="Ver IP Equipo.zip" title="Archivo para ver IP">Descargar "Mi IP" <i
+                class="bi bi-download"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link border-start border-primary-subtle ps-2" href="#modalGuiasRapidas" data-bs-toggle="modal"
+              data-bs-target="#modalGuiasRapidas">
+              Guías rápidas <i class="bi bi-info-circle"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Publicidad 300x50 -->
+        <div class="d-flex justify-content-center align-items-center me-3">
+          <div class="border border-dark d-flex flex-column justify-content-center align-items-center bg-white"
+            style="width: 18.8rem; height: 3.13rem;">
+            PUBLICIDAD 300x50
+          </div>
+        </div>
+        <!-- /Publicidad 300x50 -->
+
+      </div>
+      <form class="d-flex" role="search" style="width: 35rem;">
+        <input class="form-control me-2 searchbarNav" type="search" placeholder="Buscar..." aria-label="Buscar"
+          title="Escribe el nombre de la aplicacion que necesites" maxlength="255">
+        <button class="btn btn-outline-primary d-flex gap-1" type="submit">
+          <i class="bi bi-search"></i> Buscar
+        </button>
+      </form>
+    </div>
+
+    <!-- Alerta masivos -->
+    <div class="container-fluid d-flex align-items-center justify-content-center mt-2">
+      <div class="w-100 d-flex flex-column align-items-center justify-content-center">
+        <!-- No hay masivo -->
+        <button class="btn btn-sm bg-success-subtle w-100 rounded-3 d-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseMasivoInactivo" aria-expanded="false" aria-controls="collapseMasivoInactivo">
+          <span class="border-2 border-bottom border-success"><i class="bi bi-check-circle"></i> Sin problemas
+            masivos</span>
+        </button>
+
+        <div class="collapse w-100" id="collapseMasivoInactivo">
+          <div class="card card-body bg-success text-white">
+            Todo operativo a nivel nacional.
+          </div>
+        </div>
+
+        <!-- Hay masivo -->
+        <button class="btn btn-sm bg-danger-subtle w-100 rounded-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseMasivoActivo" aria-expanded="false" aria-controls="collapseMasivoActivo">
+          <span class="border-2 border-bottom border-danger"><i class="bi bi-exclamation-triangle"></i> Problema masivo
+            en curso (clic para saber más)</span>
+        </button>
+
+        <div class="collapse w-100" id="collapseMasivoActivo">
+          <div class="card card-body bg-danger text-white">
+            <div class="container ">
+              <h2 class="bg-dark bg-opacity-75 rounded-3 p-2">Actualmente estamos revisando y trabajando para solventar
+                (2) problemas masivos que afectan a nuestras sucursales</h2>
+              <div class="row text-start">
+                <div class="col border-start">
+                  <h3>INC0458594</h3>
+                  <p>Problema masivo actualmente. </p>
+                  <p>Afecta servicio "Aplicacion"</p>
+                  <p>En revision bajo ticket: INC0458594.</p>
+                </div>
+                <div class="col border-start">
+                  <h3>INC0705454</h3>
+                  <p>Problema masivo actualmente. </p>
+                  <p>Afecta servicio "Aplicacion"</p>
+                  <p>En revision bajo ticket: INC0705454.</p>
+                </div>
+
+              </div>
+              <p class="bg-dark bg-opacity-50 rounded-3 mt-3 p-2">Recuerda que NO es necesario que contactes para crear
+                un ticket nuevo respecto a estos problemas y que puedes utilizar el número de ticket de estos como tu
+                respaldo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Alerta masivos -->
+  </nav>
+  <!-- /Navbar -->
+
+  <!-- Header -->
+  <header class="d-flex align-items-center justify-content-center pt-5 my-5"">
+    <div class=" fondo-blur rounded-5 p-5 my-2 shadow-lg text-center" style="max-width: 85%;">
+    <h1>Bienvenido al portal de enlaces de aplicaciones SMU</h1>
+    <p>Punto único donde encontraras todas las aplicaciones corporativas pertenecientes a la umbrela de SMU
+      actualizadas a su última versión</p>
+    <div
+      class="d-flex flex-wrap gap-2 justify-content-center align-items-center mt-2 bg-dark bg-opacity-10 rounded-5 p-3">
+      Accesos rápidos:
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-cart-x"></i> Reportar Problema
+        <strong>Venta</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-cash-coin"></i> Reportar Problema
+        <strong>Tesoreria Online</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <!-- <i class="bi bi-piggy-bank"></i> -->
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-exclamation-triangle"></i> Reportar Problema
+        <strong>Frogmi</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-file-pdf"></i> Reportar Problema
+        <strong>Cognos</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-calendar2-week"></i> Reportar Problema
+        <strong>Pronto Consumo</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-tag"></i> Reportar Problema
+        <strong> GeoPricer</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-percent"></i> Reportar Problema
+        <strong>Balanza</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-pc-display-horizontal"></i> Reportar Problema
+        <strong>Computador</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <!-- <i class="bi bi-pc"></i> -->
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-printer"></i> Reportar Problema
+        <strong>Impresora</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-envelope"></i> Reportar Problema
+        <strong>Correo</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light"><i class="bi bi-truck"></i> Reportar Problema
+        <strong>Transportista</strong> <i class="bi bi-box-arrow-up-right"></i></button>
+      <button type="button" class="btn btn-sm btn-light">¿Tú problema no aparece? Haz clic aqui <i
+          class="bi bi-box-arrow-up-right"></i></button>
+    </div>
+    <p class="internet-status-header m-0 mt-2">
+    </p>
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <section class="section-con-apps bg-color-indigo border-0">
+    <!-- Container grid aplicaciones -->
+    <div class="mx-5 pt-3">
+      <h1 class="text-white text-center fw-bold fs-1 mb-5" id="tituloListadoAplicaciones">Listado aplicaciones SMU</h1>
+
+      <!-- Barra busqueda container -->
+      <div class="d-flex flex-column gap-2 mb-5">
+        <!-- Barra busqueda Input-->
+        <div class="d-flex input-group border rounded-5 border-2 border-primary shadow">
+          <input type="search" class="form-control form-control-lg rounded-5 rounded-end-0 searchbarHeader "
+            placeholder="Buscar..." aria-label="Buscar" title="Escribe el nombre de la aplicacion que necesites"
+            maxlength="255">
+          <button class="btn btn-primary rounded-end-5" type="submit">
+            <i class="bi bi-search"></i> Buscar
+          </button>
+        </div>
+        <!-- Barra busqueda Filtros -->
+        <div class="d-flex gap-2 justify-content-center">
+          <span class="badge d-flex align-items-center p-1 pe-2 bg-dark rounded-pill">
+            <span class="px-1">Etiqueta activa</span>
+            <a href="#"><i class="bi bi-x-circle-fill fs-6 text-white"></i></a>
+          </span>
+          <span class="badge d-flex align-items-center p-1 pe-2 bg-light text-dark rounded-pill">
+            <span class="px-1">Etiqueta inactiva</span>
+            <a href="#"><i class="bi bi-x-circle-fill fs-6 text-dark"></i></a>
+          </span>
+          <span class="badge d-flex align-items-center p-1 pe-2 bg-light text-dark rounded-pill">
+            <span class="px-1">Etiqueta inactiva</span>
+            <a href="#"><i class="bi bi-x-circle-fill fs-6 text-dark"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- /Barra busqueda container -->
+
+      <!-- Mensaje alerta sin resultados -->
+      <div
+        class="mensajeAlerta rounded-3 shadow bg-white d-block d-none overflow-hidden border-5 border-dark border-bottom mx-3"
+        tabindex="0">
+        <div
+          class="d-flex flex-column text-body justify-content-center align-items-center text-wrap h-100 bg-danger-subtle p-3">
+          <p class="fs-4 bg-danger text-white p-3 rounded-3 overflow-auto" style="max-height: 150px;">
+            <i class="bi bi-backspace-reverse"></i> No se han encontrado resultados para tu búsqueda (<span
+              class="text-break fst-italic" id="mensajeAlertaBusqueda"></span>).
+          </p>
+          <div class="bg-danger bg-opacity-10 p-3 rounded-3">
+            <p>Sugerencias:</p>
+            <ul>
+              <li>Asegúrate de que todas las palabras estén escritas correctamente.</li>
+              <li>Prueba diferentes palabras clave.</li>
+              <li>Prueba palabras clave más generales.</li>
+            </ul>
+            <a class="btn btn-primary" href="" role="button" target="_blank" rel="noopener noreferrer"
+              id="mensajeAlertaBusquedaIrMesa"><i class="bi bi-search"></i> Buscar "<span class="text-break fst-italic"
+                id="mensajeAlertaBusquedaBoton"></span>" en Mesa de Servicios TI <i
+                class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /Mensaje alerta sin resultados -->
+
+
+      <div id="container-contenido-apps" class="grid-container gap-5" style="min-height: 550px;">
+      </div>
+
+    </div>
+    <!-- /Container grid aplicaciones -->
+
+    <!-- Publicidad 728x90 -->
+    <div class="container w-100 pt-5 mt-5 d-flex justify-content-center">
+      <div class="border border-dark d-flex flex-column justify-content-center align-items-center bg-white"
+        style="width: 728px; height: 90px;">
+        <h1>PUBLICIDAD</h1>
+        <p>728*90</p>
+      </div>
+    </div>
+    <!-- /Publicidad 728x90 -->
+
+    <!-- Olas -->
+    <div class="pt-5 mt-5">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!-- /Olas -->
+
+    <!-- Footer pagina -->
+    <footer class="d-flex flex-column align-items-center justify-content-center bg-white pt-3 mt-auto pb-4">
+      <p>Sitio desarrollado por <a class="link-underline-info" href="https://github.com/Alplox" target="_blank"
+          rel="noopener noreferrer">Alplox</a> <i class="bi bi-code-slash"></i></p>
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+            Este sitio web es solo una demo.
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+            Tu equipo se encuentra actualmente:
+            <div class="internet-status user-select-none">
+              Comprobando conexión a internet...
+            </div>
+            <p class="mt-3">¿Quieres ver tu IP? <a class="btn btn-sm btn-outline-dark" href="#modalGuiasRapidas"
+                data-bs-toggle="modal" data-bs-target="#modalGuiasRapidas">Abrir Guías rápidas <i
+                  class="bi bi-info-circle"></i></a></p>
+            <!-- ver con que cuenta estoy en computador 	ms-settings:yourinfo        /// ms-settings URI commands -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer pagina -->
+  </section>
+
+  <!-- Boton Chat -->
+  <button type="button" class="btn btn-sm btn-info position-fixed bottom-0 end-0 mx-3 mb-5" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+    title="Pulsa para abrir Chat Agente Virtual de Servicios TI">
+    <div class="d-flex gap-3">
+      <i class="bi bi-chat-left-dots" style="font-size: xx-large;"></i>
+      <div class="d-none-on-mobile">
+        Te atendemos en segundos, escribenos!
+        <br>
+        Agente Virtual de Servicios TI
+      </div>
+    </div>
+  </button>
+
+  <!-- Ventana Chat -->
+  <div
+    class="offcanvas offcanvas-end rounded mb-5 me-3 offcanvas-resize border border-2 border-primary rounded-3 overflow-hidden"
+    data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header bg-info">
+      <h5 class="offcanvas-title " id="offcanvasRightLabel">Agente Virtual de Servicios TI
+        <img src="img/smu-marca/smu-rainbow.png" alt="SMU rainbow" width="200" height="20">
+      </h5>
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex">
+        <!-- Avatar -->
+        <div class="d-flex flex-column align-items-center">
+          <svg viewBox="0 0 36 36" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+            <mask id=":r31:" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+              <rect width="36" height="36" rx="72" fill="#FFFFFF"></rect>
+            </mask>
+            <g mask="url(#:r31:)">
+              <rect width="36" height="36" fill="#ff005b"></rect>
+              <rect x="0" y="0" width="36" height="36" transform="translate(9 -5) rotate(219 18 18) scale(1)"
+                fill="#ffb238" rx="6"></rect>
+              <g transform="translate(4.5 -3) rotate(-9 18 18)">
+                <path d="M15 19c2 1 4 1 6 0" stroke="#000000" fill="none" stroke-linecap="round"></path>
+                <rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect>
+                <rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#000000"></rect>
+              </g>
+            </g>
+          </svg>
+          <span class="badge bg-secondary text-wrap">Nombre Apellido</span>
+        </div>
+        <!-- Chat bubbles -->
+        <div class="d-flex flex-column">
+          <div class="position-relative py-2 px-4 bg-body-secondary text-dark rounded-5 lh-sm">
+            <p class="mb-0">Hola, soy el Agente Virtual de Servicios TI de SMU</p>
+          </div>
+          <div class="position-relative py-2 px-4 bg-body-secondary text-dark rounded-5 lh-sm mt-1">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-50 start-0 translate-middle "
+              fill="var(--bs-gray-200)" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+            <p class="mb-0">¿En qué te puedo ayudar? (Recuerda que solo soy una demo)</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Chat usuario -->
+      <div class="position-absolute bottom-0 end-0 p-3 w-100">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+            style="height: 100px; max-height: 250px; overflow-y: auto;"></textarea>
+          <label for="floatingTextarea">Escribenos tu mensaje</label>
+        </div>
+        <!-- Botones chat -->
+        <label for="fileInput"
+          class="btn d-flex justify-content-center align-items-center btn-outline-primary rounded-5 col-12 my-2 btn-sm"
+          title="Adjuntar archivo" style="font-size: small;">
+          <i class="bi bi-paperclip" style="font-size: large;"></i>
+          <input type="file" id="fileInput" class="form-control form-control-sm m-0 border-0 bg-transparent" multiple>
+        </label>
+        <div class="d-flex gap-4 mx-3 mb-0">
+          <button type="button" class="btn btn-secondary rounded-5 col" title="Cancelar chat"
+            data-bs-dismiss="offcanvas">Cancelar </button>
+          <!-- <button type="button" class="btn btn-outline-primary rounded-5" title="Adjuntar archivo">Adjuntar<i class="bi bi-paperclip"></i></button> -->
+          <button type="button" class="btn btn-primary rounded-5 col" title="Enviar mensaje">Enviar <i
+              class="bi bi-send"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Boton volver arriba -->
+  <a class="btn btn-warning position-fixed bottom-0 start-50 translate-middle-x mb-5 d-none" role="button"
+    id="backToTop" title="Pulsa para regresar arriba"><i class="bi bi-arrow-up-circle"></i> Volver arriba <i
+      class="bi bi-arrow-up-circle"></i></a>
+
+  <!-- Modal Guias Rapidas -->
+  <div class="modal fade modal-lg" id="modalGuiasRapidas" tabindex="-1" aria-labelledby="modalGuiasRapidasLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalGuiasRapidasLabel">
+            Guías rápidas <i class="bi bi-info-circle"></i>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Ver dirección IP en computador con sistema Windows
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <h3>Método 1:</h3>
+                  <ul>
+                    <li>¿Estás en tu computador conectado por Cable <i class="bi bi-ethernet"></i>? <a
+                        href="ms-settings:network-ethernet" target="_blank" rel="noopener noreferrer">Clic aquí para
+                        abrir configuración Windows</a></li>
+                    <li>¿Estás en tu computador conectado por Wi-Fi <i class="bi bi-wifi"></i>? <a
+                        href="ms-settings:network-wifi" target="_blank" rel="noopener noreferrer">Clic aquí para abrir
+                        configuración Windows</a></li>
+                  </ul>
+                  <p>Una vez abierta la ventana de configuracion, pincha en la Red que figure conectada (Wi-Fi =
+                    CM_USER_CORP) y busca por "Dirección IPv4"</p>
+
+
+                  <h3>Método 2:</h3>
+                  <ol>
+                    <li>
+                      Haz clic en el menú de inicio <i class="bi bi-windows"></i> en la esquina inferior izquierda.
+                      <img src="img/ipconfig-guia/ipconfig - Paso 1.png" alt="paso 1"
+                        class="img-fluid object-fit-contain">
+                    </li>
+
+                    <li>
+                      En el campo de búsqueda <i class="bi bi-search"></i> escribe <kbd>cmd</kbd>. Selecciona "Símbolo
+                      del sistema" de los resultados.
+                      <img src="img/ipconfig-guia/ipconfig - Paso 2.png" alt="paso 2"
+                        class="img-fluid object-fit-contain">
+                    </li>
+
+
+                    <li>
+                      En el Símbolo del Sistema, escribe <kbd>ipconfig</kbd> y presiona Enter.
+                      <img src="img/ipconfig-guia/ipconfig - Paso 3.png" alt="paso 2"
+                        class="img-fluid object-fit-contain">
+                    </li>
+                    <li>Verás una lista de información. Tu direccion IP se encuentra en "Dirección IPv4"</li>
+                  </ol>
+
+
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Sacar una Captura de Pantalla en Windows
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Presiona la tecla <kbd>ImpPnt PrtSc</kbd> o <kbd>PrtScn</kbd> o <kbd>Impr Pant</kbd> segun tu
+                      teclado.
+                      <img src="img/screenshot-guia/screenshot - ejemplo.png" alt="ejemplo tecla pantallazo"
+                        class="img-fluid object-fit-contain">
+                    </li>
+                    <li>Abre un programa de edición de imágenes como Paint o Word.</li>
+                    <li>Presiona <kbd>Ctrl + V</kbd> para pegar la captura.</li>
+                    <li>Guarda el archivo.</li>
+                  </ol>
+
+                  <a href="https://support.microsoft.com/es-es/windows/abre-recortes-y-realiza-una-captura-de-pantalla-a35ac9ff-4a58-24c9-3253-f12bac9f9d44"
+                    target="_blank" rel="noopener noreferrer">Abre Recortes y realiza una captura de pantalla</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Guardar un Correo como Archivo
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Abre el correo electrónico que deseas guardar.</li>
+                    <li>Pulsa en "Archivo" en la esquina superior izquierda en tu cliente de correo.</li>
+                    <li>Haz clic en la opcion "Guardar como"</li>
+                    <li>Selecciona una ubicación en tu computadora donde deseas guardar el archivo.</li>
+                    <li>Asigna un nombre al archivo y pulsa en "Guardar".</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Guardar una Página Web como Icono en el Escritorio
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Abre el navegador y ve a la página web que deseas guardar.</li>
+                    <li>Haz clic en el ícono de tres puntos verticales en la esquina superior derecha del navegador.
+                    </li>
+                    <li>Selecciona "Más herramientas" y luego "Crear acceso directo".</li>
+                    <li>Elige si deseas que aparezca en el escritorio y haz clic en "Crear".</li>
+                  </ol>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Ver nivel de toner/unidad de imagen en impresora Lexmark
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Abre el navegador y ve direccion IP que se muestran en la pantalla de la impresora.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Cómo conectarte a la red Wi-Fi corporativa
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Abre ...</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Cómo cambiar clave pc/correo
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Abre ...</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <img src="img/smu-marca/smu-rainbow.png" alt="SMU rainbow" width="200" height="20">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/mainScripts.js"></script>
+  <script src="js/searchbar.js"></script>
+  <script src="js/backToTop.js"></script>
+  <script src="js/onlineStatus.js"></script>
+</body>
+
+</html>

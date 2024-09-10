@@ -1,0 +1,267 @@
+{
+    "Formato_Ingresos": {
+        "0": {
+            "Tipo": "Desconocido",
+            "Ejemplo": "Al ser un sitio externo a SMU no manejamos esta información y es responsabilidad del usuario manejarla o gestionarla con dicha entidad mediante sus vias de comunicacion disponibles"
+        },
+        "1": {
+            "Tipo": "Variable",
+            "Ejemplo": "Puede ser Rut o Correo corporativo"
+        },
+        "2": {
+            "Tipo": "Rut",
+            "Ejemplo": "de ser 11222333-4 usar 11222333-4"
+        },
+        "3": {
+            "Tipo": "Rut sin guion ni digito verificador",
+            "Ejemplo": "de ser 11222333-4 usar solo 11222333"
+        },
+        "4": {
+            "Tipo": "Correo coporativo generico completo",
+            "Ejemplo": "de ser admin9000@smu.cl usar admin9000@smu.cl"
+        },
+        "5": {
+            "Tipo": "Correo coporativo hasta antes del arroba (@)",
+            "Ejemplo": "de ser admin9000@smu.cl usar solo admin9000"
+        }
+    },
+    "Interno SMU": {
+        "Ejemplo": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Página Web",
+            "Formato_Ingreso": 2,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "https://www.google.cl/",
+                "Reportar Problema": "https://www.google.cl/"
+            },
+            "Ultima_Vez_Actualizado": "22-01-2024"
+        }
+
+    },
+    "Externo SMU": {
+        "plantilla0": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (Android)",
+            "Formato_Ingreso": 2,
+            "Contacto": "+569 ",
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla1": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (IOS)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla2": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (IOS)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla3": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Página Web",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla4": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (IOS)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla5": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (IOS)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "https://www.google.cl/",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla6": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (Android)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": "https://www.google.cl/"
+            }
+        },
+        "plantilla7": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Aplicación móvil (Android)",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla8": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla9": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "https://www.google.cl/",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla10": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla11": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "https://www.google.cl/",
+                "Reportar Problema": "https://www.google.cl/"
+            }
+        },
+        "plantilla12": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla13": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla14": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla15": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla16": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla17": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "https://www.google.cl/",
+                "Reportar Problema": "https://www.google.cl/"
+            }
+        },
+        "plantilla18": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        },
+        "plantilla19": {
+            "Enlace": "https://www.google.cl/",
+            "Funcion": "Este sitio se utiliza para...",
+            "Tipo": "Sitio/Aplicación móvil",
+            "Formato_Ingreso": 0,
+            "Enlaces Mesa de Servicio TI": {
+                "Crear/Modificar cuenta": "https://www.google.cl/",
+                "Desbloquear/Bloquear cuenta": "",
+                "Reportar Problema": ""
+            }
+        }
+
+    }    
+}
